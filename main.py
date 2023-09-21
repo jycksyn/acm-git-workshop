@@ -1,9 +1,11 @@
-from math import abs
+import random
 
 def calculate_compatibility(name1, name2):
-    pass
-    #TODO Add compatibility calculator
+    names = [name1, name2]
+    seed = "".join(names)
+    gen = random.Random(seed)
+    compatibility = (gen.random()) * 100 + 1
+    return int(compatibility)
 
 if __name__ == "__main__":
-    pass
-    #TODO Add your main section code here
+    print("Hello, world")
